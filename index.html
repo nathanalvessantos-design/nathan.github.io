@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nathan Alves dos Santos · Portfólio</title>
+  <style>
+    :root {
+      --bg-color: #f8fafc;
+      --card-bg: #ffffff;
+      --text-main: #1e293b;
+      --text-muted: #64748b;
+      --accent: #0f172a;
+      --border: #e2e8f0;
+      --tag-bg: #f1f5f9;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-main);
+      line-height: 1.6;
+      padding: 2rem 1rem;
+    }
+
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    header {
+      background-color: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    header h1 {
+      font-size: 1.75rem;
+      color: var(--accent);
+      margin-bottom: 0.25rem;
+    }
+
+    .subtitle {
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      margin-bottom: 1rem;
+    }
+
+    .bio {
+      font-size: 1rem;
+      color: var(--text-main);
+    }
+
+    .project-card {
+      background-color: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .project-header {
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .project-label {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      background-color: var(--tag-bg);
+      color: var(--text-muted);
+      padding: 0.25rem 0.6rem;
+      border-radius: 6px;
+      margin-bottom: 0.5rem;
+    }
+
+    .project-header h2 {
+      font-size: 1.35rem;
+      color: var(--accent);
+    }
+
+    .blocks {
+      display: grid;
+      gap: 1.25rem;
+    }
+
+    .block {
+      background-color: var(--bg-color);
+      border-left: 3px solid var(--accent);
+      padding: 1rem 1.25rem;
+      border-radius: 0 8px 8px 0;
+    }
+
+    .block h3 {
+      font-size: 0.95rem;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+      color: var(--accent);
+      margin-bottom: 0.35rem;
+    }
+
+    .block p {
+      font-size: 0.95rem;
+      color: var(--text-main);
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem 1rem;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+
+    footer a {
+      color: var(--accent);
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 1rem 0.75rem;
+      }
+
+      header, .project-card {
+        padding: 1.5rem;
+      }
+
+      header h1 {
+        font-size: 1.45rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Nathan Alves dos Santos</h1>
+      <p class="subtitle">Ciência de Dados · Fatec Adamantina</p>
+      <p class="bio">Estudante de Ciência de Dados interessado em análise exploratória, organização de informações e transformação de dados em indicadores claros.</p>
+    </header>
+
+    <main>
+      <section class="project-card">
+        <div class="project-header">
+          <span class="project-label">Projeto em Destaque</span>
+          <h2>Análise de Desempenho Individual em Partidas Amadoras</h2>
+        </div>
+
+        <div class="blocks">
+          <div class="block">
+            <h3>Problema</h3>
+            <p>Acompanhar a evolução individual ao longo de diferentes campeonatos e equipes de forma manual dificultava comparar a regularidade de participação em gols e assistências.</p>
+          </div>
+
+          <div class="block">
+            <h3>O que eu fiz</h3>
+            <p>Estruturei uma base de dados simples para registrar partidas e calcular automaticamente médias de participação direta em gols por competição.</p>
+          </div>
+
+          <div class="block">
+            <h3>Como eu fiz</h3>
+            <p>Organizei os registros de jogos, gols e assistências em planilhas estruturadas e utilizei Python com a biblioteca Pandas para consolidar os totais e calcular as taxas por partida.</p>
+          </div>
+
+          <div class="block">
+            <h3>Resultado</h3>
+            <p>Consolidação de 21 partidas disputadas em 4 equipes diferentes, totalizando 14 gols e 10 assistências (média de 1,14 participação direta em gol por jogo).</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>GitHub: <a href="https://github.com/SEU-USUARIO" target="_blank" rel="noopener noreferrer">https://github.com/SEU-USUARIO</a></p>
+    </footer>
+  </div>
+</body>
+</html>
